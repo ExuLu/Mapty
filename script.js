@@ -4,7 +4,7 @@
 const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
 const form = document.querySelector('.form');
-// const formEdit = document.querySelector('.form-edit');
+const formEdit = document.querySelector('.form-edit');
 const containerWorkouts = document.querySelector('.workouts');
 const inputType = document.querySelector('.form__input--type');
 const inputDistance = document.querySelector('.form__input--distance');
@@ -114,7 +114,7 @@ class App {
     inputType.addEventListener('change', this._toggleElevationField);
     containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
     containerWorkouts.addEventListener('click', this._deleteWorkout.bind(this));
-    // containerWorkouts.addEventListener('click', this._editWorkout.bind(this));
+    containerWorkouts.addEventListener('click', this._editWorkout.bind(this));
     deleteAllWorkoutsBtn.addEventListener(
       'click',
       this._deleteAllWorkouts.bind(this)
@@ -412,6 +412,8 @@ class App {
 
     deleteApproveAllWorkouts.addEventListener('click', this.reset.bind(this));
   }
+
+  _editWorkout() {}
 }
 
 const app = new App();
