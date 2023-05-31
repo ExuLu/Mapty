@@ -114,7 +114,7 @@ class App {
     inputType.addEventListener('change', this._toggleElevationField);
     containerWorkouts.addEventListener('click', this._moveToPopup.bind(this));
     containerWorkouts.addEventListener('click', this._deleteWorkout.bind(this));
-    containerWorkouts.addEventListener('click', this._editWorkout.bind(this));
+    // containerWorkouts.addEventListener('click', this._editWorkout.bind(this));
     deleteAllWorkoutsBtn.addEventListener(
       'click',
       this._deleteAllWorkouts.bind(this)
