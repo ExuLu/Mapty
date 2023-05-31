@@ -21,7 +21,7 @@ const deleteCancelAllWorkouts = document.querySelector(
   '#cancelDeleteAllWorkouts'
 );
 const deleteAllWorkoutsBtn = document.querySelector('.btn__delete--all');
-console.log(deleteAllWorkoutsBtn);
+
 const deleteAllWorkoutsModal = document.querySelector(
   '.modal__delete--all--workouts'
 );
